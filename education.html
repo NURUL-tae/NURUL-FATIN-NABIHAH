@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education Journey</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Add a subtle overlay to improve text readability */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            z-index: -1;
+        }
+
+        /* Header Section */
+        header {
+            padding: 1.5rem 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7); /* Darker overlay for contrast */
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #00d2ff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Section */
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #f4f4f4;
+        }
+
+        .container p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        /* Image Styling */
+        .image-wrapper {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .image-wrapper img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Table Section */
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+            font-size: 1.1rem;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table caption {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Footer Section */
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #00d2ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .container h2 {
+                font-size: 1.8rem;
+            }
+
+            .container p {
+                font-size: 1rem;
+            }
+
+            table th, table td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Education Journey</h1>
+        <p>Welcome to my personal educations history</p>
+	<button onclick="history.back()">Go Back</button>
+           </header>
+
+    <!-- Education Section -->
+    <div class="container" id="education">
+                       <!-- Image for Education Section -->
+        <div class="image-wrapper">
+                   </div>
+    </div>
+
+    <!-- Schools Table -->
+    <table id="schools">
+        <caption>My Schools</caption>
+        <thead>
+            <tr>
+                <th>Twinkle Preschool & Tadika Kemas</th>
+                <th>SK Sertik</th>
+                <th>Indera Shahbandar Pahang & SMK Seri Bentong</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Kindergarten Years</p>
+                    <img src="twinkle.jpeg" alt="Preschool" style="width: 100%; max-width: 150px; border-radius: 5px;">
+<p>- went to twinkle preschool when i was 4 years old untill 6yo.</p>
+<p>-went to tadika kemas when i was 5yo untill 6yo.</p>
+<p>-twinkle (evening) & tadika kemas(morning)</p>
+                </td>
+                <td>
+                    <p>Primary Education</p>
+                    <img src="skks.jpeg" alt="Primary School" style="width: 100%; max-width: 150px; border-radius: 5px;">
+			<p>- year 1 untill year 5</p>
+<p>-every exam i always got top 5 in batch</p>
+<p>-got number 1 in storytelling</p>
+<p>-got number 2 for sajak peringkat negeri(10yo)</p>
+                </td>
+                <td>
+                    <p>HighchoolEducation</p>
+                    <img src="smksb.jpeg" alt="Highschool" style="width: 100%; max-width: 150px; border-radius: 5px;">
+<p>-changed to SISP when i was 11yo</p>
+<p>-got number 3 for storytelling</p>
+<p>-number 1 for sajak</p>
+<p>-number 1 for merentas desa women under 12yo/15yo</p>
+<p>-vice president for handball club and sport house</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        &copy; 2024 Nurul Fatin Nabihah Binti Nor Azhar. Built with ❤️. Connect with me on 
+        <a href="fatynkimm@gmail.com">Email</a>.
+    </footer>
+
+</body>
+</html>

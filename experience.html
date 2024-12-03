@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experiences</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+            background-size: 400% 400%;
+            z-index: -1;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for contrast */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Experiences Section */
+        .container {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        /* Image Grid for Experiences */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .grid-item {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .grid-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .grid-item p {
+            font-size: 1rem;
+            color: #f4f4f4;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Experiences</h1>
+        <p>Discover the moments that shaped me</p>
+	<button onclick="history.back()">Go Back</button>
+
+    </header>
+
+    <!-- Experiences Section -->
+    <div class="container">
+        <h2>Professional and Personal Growth</h2>
+        <p>Throughout my life, I have gained valuable experiences that have shaped my skills, character, and passions. Here are some highlights from my journey:</p>
+        <div class="grid">
+            <!-- Experience 1 -->
+            <div class="grid-item">
+                <img src="fatin hospital.jpg" alt="Experience 1">
+                <h3>Internship at Hospital Bentong Pahang</h3>
+                <p>I intern as a systems student at IT department.It was the best experiences ever because everyone in IT department always give me food, treat me breakfast and lunch and always bring me to the sites.During my internship, my supervisor which is Mr.Hoh Poh Chen always teach me how to do program and give me the example of program that the hospital use .</p>
+            </div>
+            <!-- Experience 2 -->
+            <div class="grid-item">
+<br>
+                <img src="intern2.jpg" alt="photo">
+</br>
+<br>
+		<img src="intern1.jpg" alt="photo">
+</br>
+<br>
+		<img src="intern3.jpg" alt="photo">
+</br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Nurul Fatin Nabihah Binti Nor Azhar. Built with ❤️. Connect with me on 
+        <a href="fatynkimm@gmail.com">Email</a>.
+    </footer>
+
+</body>
+</html>
